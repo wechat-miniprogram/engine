@@ -28,7 +28,7 @@ G_DECLARE_FINAL_TYPE(FlPlatformViewsPlugin,
 
 /**
  * fl_platform_views_plugin_new:
- * @messenger: (transfer-none): an #FlBinaryMessenger.
+ * @messenger: an #FlBinaryMessenger.
  *
  * Creates a new plugin that implements SystemChannels.platform_views from the
  * Flutter services library.
@@ -41,7 +41,7 @@ FlPlatformViewsPlugin* fl_platform_views_plugin_new(
 /**
  * fl_platform_views_plugin_register_view_factory:
  * @plugin: an #FlPlatformViewsPlugin.
- * @factory: (transfer-none): the view factory that will be registered.
+ * @factory: the view factory that will be registered.
  * @view_type: A unique identifier for the factory. The Dart code of the Flutter
  *             app can use this identifier to request creation of a #GtkWidget
  *             by the registered factory.

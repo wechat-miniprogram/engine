@@ -112,7 +112,7 @@ static FlMethodResponse* platform_views_create(FlPlatformViewsPlugin* self,
 
   platform_view = fl_platform_view_factory_create_platform_view(
       factory, id, creation_params);
-  if (!FL_IS_PLATFORM_VIEW(platform_view)) {
+  if (!platform_view) {
     return FL_METHOD_RESPONSE(fl_method_error_response_new(
         kBadArgumentsError, "Invalid platform view", nullptr));
   }
